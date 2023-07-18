@@ -11,6 +11,6 @@ if($tmp == 'home'){
     include(__DIR__.'./home.php');
 }
 if($tmp == 'mystore'){
-    include(__DIR__.'./mystore/main.php');
+    include(__DIR__.'./quanlydanhmuc/main.php');
 }
 ?>

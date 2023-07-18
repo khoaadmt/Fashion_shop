@@ -20,29 +20,48 @@
 <body>
 <?php
     // include './main/sidebar.php';
-     include './adminhub-master/page/main/sidebar.php';
+    // include './adminhub-master/page/main/sidebar.php';
 ?>
-   <section id="content">
-		<!-- NAVBAR -->
-        <?php
-          include './adminhub-master/page/main/navbar.php';
-        ?>
-		<!-- NAVBAR -->
-
-		<!-- MAIN -->
-        <?php
-          include './adminhub-master/page/main/main.php';
-        ?>
-		<!-- MAIN -->
-	</section>
-	<!-- CONTENT -->
+<section id="content">
+<?php
+        include("config/connect.php");
+        include("modules/header.php");
+        include("modules/menu.php");
+    ?>
+    <main>
+			<!-- <div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">My Store</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div> -->
+<?php
+	include ('/xampp/htdocs/BanDongHo/admincp/config/connect.php');
+    $sql_lietke="SELECT * FROM tbl_danhmuc ORDER BY thutu DESC";
+    $result_lietke= mysqli_query($connect,$sql_lietke);
+?>
+			<div class="table-data">
+				<div class="order">
+            <?php
+                include("modules/main.php");
+                include("modules/footer.php");
+            ?>
+				</div>
+			</div>
+</main>
+</section>
 <script src="./adminhub-master/script.js"></script>
-    <!-- <?php
-         include("config/connect.php");
-        // include("modules/header.php");
-         include("modules/menu.php");
-        // include("modules/main.php");
-        // include("modules/footer.php");
-    ?> -->
 </body>
 </html>

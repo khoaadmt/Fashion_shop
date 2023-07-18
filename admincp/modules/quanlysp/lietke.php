@@ -1,13 +1,8 @@
-
-
 <?php
-    
-    
     $sql_lietke_sp="SELECT * FROM tbl_sanpham ,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY id_sanpham DESC";
     $result_lietke_sp= mysqli_query($connect,$sql_lietke_sp);
 ?>
-<p>Liệt kê danh mục sản phẩm</p>
- <table style="width: 100%;" border="1" style="border-collapse:collapse;"> 
+ <table class="tbl_lietKe displayNone"> 
      <tr>
          <td>ID</td>
          <td>Tên sản phảm</td>
@@ -59,3 +54,19 @@
     }
     ?>
  </table>
+
+ <button class="btnThemSP displayNone">Thêm sản phẩm</button>
+ <script>
+    var btnThemSP = document.querySelector(".btnThemSP");
+        btnThemSP.onclick = function(){
+            var tbl_themSP = document.querySelector('.tbl_themSP');
+            tbl_themSP.classList.remove("displayNone")
+
+            var tbl_lietKe = document.querySelector(".tbl_lietKe");
+            tbl_lietKe.classList.add('displayNone');
+
+            var btnHienThiDSSP = document.querySelector(".hienThiDanhSachSanPham");
+            btnHienThiDSSP.classList.remove('displayNone');
+            btnThemSP.classList.add('displayNone');
+    }
+ </script>

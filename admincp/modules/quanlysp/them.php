@@ -1,9 +1,5 @@
- <p>Thêm sản phẩm</p>
- <table border="1" width="50%" style="border-collapse: collapse;">
+ <table class="tbl_themSP">
    <form method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
-    <tr>
-        <th colspan="2">Điền sản phẩm</th>
-    </tr>
     <tr>
         <td>Tên sản phẩm</td>
         <td><input type="text" name="tensanpham" ></td>
@@ -62,8 +58,25 @@
         </td>
     </tr>
     <tr>
-
-        <td colspan="2"><input type="submit" value="Thêm sản phẩm" name="themsanpham"></td>
+        <td><input type="submit" value="Thêm sản phẩm" name="themsanpham"></td>
+        
     </tr>
 </form>
  </table>
+ <br>
+ <button class="hienThiDanhSachSanPham">Hiển thị danh sách sản phẩm </button>
+ <script>
+    var btnHienThiDSSP = document.querySelector(".hienThiDanhSachSanPham");
+    btnHienThiDSSP.onclick = function(){
+        var tbl_themSP = document.querySelector('.tbl_themSP');
+        tbl_themSP.classList.add("displayNone")
+
+        var tbl_lietKe = document.querySelector(".tbl_lietKe");
+        tbl_lietKe.classList.remove('displayNone');
+
+        btnHienThiDSSP.classList.add('displayNone');
+        
+        var btnThemSP = document.querySelector(".btnThemSP");
+        btnThemSP.classList.remove('displayNone');
+    }
+ </script>
