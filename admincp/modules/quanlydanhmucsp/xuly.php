@@ -2,7 +2,13 @@
     include "../../config/connect.php";
     $tendanhmuc=$_POST['tendanhmuc'];
     $thutu = $_POST['thutu'];
+
     if(isset($_POST['themdanhmuc'])){
+        if(is_null($tendanhmuc)){
+            $tendanhmuc = 'null';
+            echo '<script>console.log("null")</script>';
+        }
+
         $sql_them="INSERT INTO tbl_danhmuc(tendanhmuc,thutu) VALUE('".$tendanhmuc."','".$thutu."'); ";
         mysqli_query($connect,$sql_them);
         header('Location:../../index.php?action=quanlydanhmucsanpham&query=them');

@@ -38,11 +38,13 @@
                         }elseif($bientam=='quanlydonhang' && $query=='xemdonhang'){
                             include("modules/quanlydonhang/xemdonhang.php");
                             
-                        }elseif($bientam=='dangxuat'){
+                        }elseif($bientam=='dashboard' && $query=='1'){
+                            include("modules/dashboard/dashboard.php");
+                        }
+                        elseif($bientam=='dangxuat'){
                             include("../login.php");
                         }
                         else{
-                            include("modules/dashboard.php");
                         }
                     ?>
 </div>

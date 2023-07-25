@@ -2,7 +2,7 @@
     $sql_lietke_sp="SELECT * FROM tbl_sanpham ,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY id_sanpham DESC";
     $result_lietke_sp= mysqli_query($connect,$sql_lietke_sp);
 ?>
- <table class="tbl_lietKe displayNone"> 
+ <table class="tbl_lietKe tr-hover displayNone"> 
      <tr>
          <td>ID</td>
          <td>Tên sản phảm</td>
@@ -54,7 +54,8 @@
     }
     ?>
  </table>
-
+ <br>
+ <br>
  <button class="btnThemSP displayNone">Thêm sản phẩm</button>
  <script>
     var btnThemSP = document.querySelector(".btnThemSP");

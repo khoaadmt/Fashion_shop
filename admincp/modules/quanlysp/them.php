@@ -10,7 +10,7 @@
     </tr>
     <tr>
         <td>Giá</td>
-        <td><input type="number" name="giasp" ></td>
+        <td><input type="number" name="giasp" oninput="validateInput(this)"></td>
     </tr>
     <tr>
         <td>Số lượng</td>
@@ -58,11 +58,14 @@
         </td>
     </tr>
     <tr>
-        <td><input type="submit" value="Thêm sản phẩm" name="themsanpham"></td>
-        
+        <td>
+            <button type="submit" name="themsanpham">Thêm sản phẩm</button>
+            <!-- <input type="submit" value="Thêm sản phẩm" name="themsanpham"> -->
+        </td>
     </tr>
 </form>
  </table>
+ <br>
  <br>
  <button class="hienThiDanhSachSanPham">Hiển thị danh sách sản phẩm </button>
  <script>

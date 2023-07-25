@@ -3,7 +3,7 @@
     $result_lietke= mysqli_query($connect,$sql_lietke);
 ?>
 
-<div class="table-data">
+<div class="table-data tr-hover">
 				<div class="order">
 					<div class="head">
 						<h3>Quản lý danh mục</h3>

@@ -1,6 +1,12 @@
 const allSideMenu = document.querySelectorAll(".side-menu.top li a");
 const currentURL = window.location.href;
 
+function validateInput(input) {
+  if (input.value < 0) {
+    input.value = 0;
+  }
+}
+
 allSideMenu.forEach((item) => {
   item.parentElement.classList.remove("active");
 });

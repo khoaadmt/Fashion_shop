@@ -2,7 +2,7 @@
     $sql_lietke_dh="SELECT * FROM tbl_giohang ,tbl_dangky  WHERE tbl_giohang.id_khachhang=tbl_dangky.id_khachhang ORDER BY id_cart DESC";
     $result_lietke_dh= mysqli_query($connect,$sql_lietke_dh);
 ?>
- <table> 
+ <table class="tr-hover"> 
     <thead>
 		<tr>
             <th style="padding-right: 10px;">ID</th>

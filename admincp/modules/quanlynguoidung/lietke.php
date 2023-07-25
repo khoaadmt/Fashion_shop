@@ -2,7 +2,7 @@
         $sql_lietke_nguoidung="SELECT * FROM tbl_dangky ORDER BY id_khachhang DESC";
         $result_lietke_nguoidung= mysqli_query($connect,$sql_lietke_nguoidung);
     ?>
-    <table>
+    <table class="tr-hover">
         <thead>
             <tr>
                 <th style="padding-right: 10px;">ID</th>

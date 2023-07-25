@@ -5,7 +5,7 @@
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="index.php?action=home&&query=home">
+				<a href="index.php?action=dashboard&query=1">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
@@ -25,7 +25,7 @@
 			<li>
 				<a href="index.php?action=quanlynguoidung&query=them">
 					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Quản lý người dùng</span>
+					<span class="text">Thông tin người dùng</span>
 				</a>
 			</li>
 			<li>
@@ -46,27 +46,14 @@
 				<a href="#" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
+					<?php
+						if(isset($_GET['dangxuat'])&&$_GET['dangxuat']==1){
+							unset($_SESSION['dangnhap']);
+							header('Location:login.php');
+						}
+					?>
 				</a>
 			</li>
 		</ul>
 </section>
 
-<!-- <ul class="admincp_list">
-    
-    <li><a href="index.php?action=quanlysanpham&query=them">Quản lý sản phẩm </a></li>
-
-    <?php
-        if(isset($_SESSION['dangnhap'])){
-            if($_SESSION['dangnhap']=='admin'){
-    ?>
-        <li><a href="index.php?action=quanlydanhmucsanpham&query=them">Quản lý danh mục sản phẩm </a></li>
-        <li><a href="index.php?action=quanlynguoidung&query=them">Quản lý người dùng</a></li>
-        
-    <?php
-
-            }
-       }
-    
-    ?>
-    <li><a href="index.php?action=quanlydonhang&query=them">Quản lý đơn hàng </a></li>
-</ul> -->

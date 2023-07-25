@@ -18,10 +18,6 @@
 	<link rel="stylesheet" href="./adminhub-master/style.css">
 </head>
 <body>
-<?php
-    // include './main/sidebar.php';
-    // include './adminhub-master/page/main/sidebar.php';
-?>
 <section id="content">
 <?php
         include("config/connect.php");
@@ -56,7 +52,6 @@
 				<div class="order">
             <?php
                 include("modules/main.php");
-                include("modules/footer.php");
             ?>
 				</div>
 			</div>

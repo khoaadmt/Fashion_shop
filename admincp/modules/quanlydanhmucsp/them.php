@@ -20,10 +20,13 @@
                         </tr>
                         <tr>
                             <td>Thứ tự</td>
-                            <td><input type="text" name="thutu"></td>
+                            <td><input type="number" name="thutu" oninput="validateInput(this)"></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="submit" value="Thêm danh mục sản phẩm" name="themdanhmuc"></td>
+                            <td colspan="2">
+								<button type="submit" name="themdanhmuc">Thêm danh mục sản phẩm</button>
+								<!-- <input type="submit" value="Thêm danh mục sản phẩm" name="themdanhmuc"> -->
+							</td>
                         </tr>
                         </form>
 						</tbody>
