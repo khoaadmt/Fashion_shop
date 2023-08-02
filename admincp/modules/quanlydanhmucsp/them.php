@@ -13,7 +13,7 @@
 							</tr>
 						</thead>
 						<tbody>
-                        <form method="POST" action="modules/quanlydanhmucsp/xuly.php">
+                        <form id="themDM_form" method="POST" action="modules/quanlydanhmucsp/xuly.php">
                         <tr>
                             <td>Tên danh mục</td>
                             <td><input type="text" name="tendanhmuc" ></td>

@@ -14,16 +14,25 @@
     <link rel="stylesheet" href="css/style_admincp.css">
     <title>AdminCp</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	
 	<!-- My CSS -->
 	<link rel="stylesheet" href="./adminhub-master/style.css">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-<section id="content">
+<div id="toast"></div>
 <?php
         include("config/connect.php");
         include("modules/header.php");
         include("modules/menu.php");
-    ?>
+?>
+<section id="content">
     <main>
 			<!-- <div class="head-title">
 				<div class="left">
@@ -43,11 +52,6 @@
 					<span class="text">Download PDF</span>
 				</a>
 			</div> -->
-<?php
-	include ('/xampp/htdocs/BanDongHo/admincp/config/connect.php');
-    $sql_lietke="SELECT * FROM tbl_danhmuc ORDER BY thutu DESC";
-    $result_lietke= mysqli_query($connect,$sql_lietke);
-?>
 			<div class="table-data">
 				<div class="order">
             <?php
@@ -55,7 +59,7 @@
             ?>
 				</div>
 			</div>
-</main>
+	</main>
 </section>
 <script src="./adminhub-master/script.js"></script>
 </body>

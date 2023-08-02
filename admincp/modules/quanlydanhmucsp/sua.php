@@ -17,7 +17,7 @@
 				<th></th>
 				</tr>
 			</thead>
-            <form method="POST" action="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc']?>">
+            <form id="suaDm_form" method="POST" action="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc']?>">
                 <?php
                     while($dong =mysqli_fetch_array($result_sua)){
                 ?>
@@ -30,7 +30,6 @@
                     <td><input type="text" name="thutu" value="<?php echo $dong['thutu']?>"></td>
                 </tr>
                 <tr>
-
                     <td colspan="2"><input type="submit" value="Sửa sản phẩm" name="suadanhmuc"></td>
                 </tr>
                 <?php

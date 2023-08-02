@@ -16,6 +16,7 @@
 								<th>ID</th>
 								<th>Tên danh mục</th>
 								<th>Thứ tự</th>
+								<th>Quản trị</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -30,7 +31,8 @@
 								<td><?php echo $row['tendanhmuc'] ?></td>
 								<td><?php echo $row['thutu']?></td>
 								<td>
-									<a href="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc']?>">Xóa</a>|
+
+									<a style="padding-right: 10px;" href="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc']?>">Xóa</a>
 									<a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id_danhmuc']?>">Sửa</a>
 								</td>
 							</tr>

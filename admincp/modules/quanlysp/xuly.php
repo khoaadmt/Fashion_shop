@@ -20,9 +20,6 @@
 
     if(isset($_POST['themsanpham'])){
 
-        
-
-
         if(isset($_FILES['hinhanh'])){
             if($file['type']== 'image/jpeg'||$file['type']== 'imgae/jpg'||$file['type']== 'image/png'){
                 

@@ -1,5 +1,5 @@
  <table class="tbl_themSP">
-   <form method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
+   <form id="themSP_form" method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
     <tr>
         <td>Tên sản phẩm</td>
         <td><input type="text" name="tensanpham" ></td>
