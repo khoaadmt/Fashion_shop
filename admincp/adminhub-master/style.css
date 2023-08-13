@@ -56,6 +56,16 @@ body {
   z-index: 999999;
 }
 
+.graph {
+  width: auto !important;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myChart{
+  height: 350px !important;
+}
 .toast {
   display: flex;
   align-items: center;
@@ -474,7 +484,7 @@ textarea {
 /* MAIN */
 #content main {
   width: 100%;
-  padding: 36px 24px;
+  padding: 0 24px;
   font-family: var(--poppins);
   max-height: calc(100vh - 56px);
   overflow-y: auto;
@@ -525,7 +535,6 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 24px;
-  margin-top: 36px;
 }
 #content main .box-info li {
   padding: 24px;
@@ -576,7 +585,7 @@ textarea {
 #content main .table-data > div {
   border-radius: 20px;
   background: var(--light);
-  padding: 24px;
+  padding: 0 24px 24px 24px;
   overflow-x: auto;
 }
 #content main .table-data .head {

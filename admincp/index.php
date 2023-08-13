@@ -26,13 +26,16 @@
     />
 </head>
 <body>
-<div id="toast"></div>
+
+ <?php 
+	 include("modules/menu.php");
+ ?>
+<section id="content">
 <?php
         include("config/connect.php");
         include("modules/header.php");
-        include("modules/menu.php");
+       
 ?>
-<section id="content">
     <main>
 			<!-- <div class="head-title">
 				<div class="left">
