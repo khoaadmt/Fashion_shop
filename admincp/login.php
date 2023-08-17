@@ -26,9 +26,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_login.css">
     <title>Login</title>
+    <style>
+.login{
+    text-align: center;
+    background: #181818;
+    width: 450px;
+    height: 400px;
+    padding: 25px;
+    position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.login h2{
+    color: #fff;
+}
+.login input[type="password"], .login input[type="text"]{
+    background: none;
+    outline: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    padding: 0px 15px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    transition: 1s;
+    margin-top: 50px;
+    margin-left:70px;
+}
+.login input[type="password"]:focus, .login input[type="text"]:focus{
+    width: 320px;
+    border-color: chartreuse;
+    transition: 1s;
+}
+.login button[type="submit"]{
+    background: none;
+    outline: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+    margin-top: 50px;
+}
+.login button[type="submit"]:hover{
+    background: #002cff;
+    transition: 1s;
+}
+.top_link a:hover{
+  color:yellow;
+}
+.top_link a{
+  color:white;
+  font-size:16px;
+}
+    </style>
 </head>
 <body>
-<div class="top_link"><a href="../index.php"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Về trang chủ</a></div>
+<div class="top_link"><a href="../index.php">🏚️ Về trang chủ</a></div>
 <form class="login" action="" method="POST">
   <h2 style="text-align: center">ADMIN LOGIN</h2>
   <input type="text" placeholder="Username" name="usernamez">

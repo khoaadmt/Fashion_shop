@@ -22,6 +22,9 @@
 	} 
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +47,7 @@
 .login {
     height: 1000px;
     width: 100%;
-    background: radial-gradient(#653d84, #332042);
+    background-color: #f3e0e2;
     position: relative;
 }
 .login_box {
@@ -54,20 +57,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: white;
     border-radius: 10px;
-    box-shadow: 1px 4px 22px -8px #0004;
+    box-shadow: 1px 4px 22px -8px blue;
     display: flex;
     overflow: hidden;
 }
 .login_box .left{
-  width: 41%;
+  width: 40%;
   height: 100%;
   padding: 25px 25px;
+  background:white;
   
 }
 .login_box .right{
-  width: 59%;
+  width: 60%;
   height: 100%  
 }
 .left .top_link a {
@@ -75,6 +79,8 @@
     font-weight: 400;
     display: flex;
     align-items: center;
+     justify-content: right;
+     font-size: 18px;
 }
 .left .top_link{
   height: 20px
@@ -86,23 +92,31 @@
     align-self: center;
     height: 100%;
     width: 73%;
-    margin: auto;
+    margin-left:70px;
+    margin-bottom:200px;
 }
 .left h3{
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-family: math;
 }
 .left input {
     border: none;
-    width: 80%;
     margin: 15px 0px;
-    border-bottom: 1px solid #4f30677d;
-    padding: 7px 9px;
+    border: 1px solid #4f30677d;
+    border-radius: 30px;
+    padding: 10px 9px;
     width: 100%;
     overflow: hidden;
     background: transparent;
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
+    border: solid 2px #002cff;
+}
+.left input:focus, .left input:focus{
+    width: 280px;
+    border-color: chartreuse;
+    transition: 1s;
 }
 .left{
 	background: linear-gradient(-45deg, #dcd7e0, #fff);
@@ -112,20 +126,21 @@
     padding: 15px 70px;
     border-radius: 8px;
     display: block;
-    margin: auto;
-    margin-top: 120px;
-    background: #583672;
+    background: red;
     color: #fff;
     font-weight: bold;
+    border: solid 0.5px #002cff;
     -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
     -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    margin-left:40px;
+    margin-bottom:100px;
 }
 
 
-
 .right {
-	background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(https://luxshopping.vn/Uploads/UserFiles/images/banner%20dong%20ho%20frederique%20constaint.png);
+	background: linear-gradient(212.38deg, rgba(180, 3, 14, 0.7) 20%, rgba(238, 85, 136, 0.71) 90%),
+    url("https://salt.tikicdn.com/cache/750x750/ts/product/2a/fb/4c/88823092c894184fffa905ebfba3359d.jpg.webp");
 	color: #fff;
 	position: relative;
 }
@@ -142,54 +157,53 @@
   font-size: 50px;
   font-weight: 500;
 }
-.right-text h5{
+.right-text h3{
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 19px;
+  font-size: 35px;
   font-weight: 400;
 }
 
-.right .right-inductor{
-  position: absolute;
-  width: 70px;
-  height: 7px;
-  background: #fff0;
-  left: 50%;
-  bottom: 70px;
-  transform: translate(-50%, 0%);
-}
 .top_link img {
     width: 28px;
-    padding-right: 7px;
+  
     /* margin-top: -3px; */
 }
-
-
-
+.formi{
+  margin-bottom:60px;
+}
+.top_link a:hover{
+  color:blue;
+}
+.submit:hover{
+  background-color:blue;
+}
 
     </style>
 </head>
 <body>
 <section class="login">
 		<div class="login_box">
-			<div class="left">
-				<div class="top_link"><a href="../index.php"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Về trang chủ</a></div>
+			<div class="right">
+				<div class="right-text">
+					<h2>Quần Áo Thể Thao</h2>
+					<h3>CHẤT LƯỢNG 5 SAO</h3>
+          <h3>⭐⭐⭐⭐⭐</h3>
+				</div>
+			</div>
+            <div class="left">
+				<div class="top_link"><a href="../index.php"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8jHyAAAABhYWEQCgwfGhvr6+s+PT5nZWYLBgf4+Pj7+/tPT08dGBkYExT09PRXVlaysbJ6enrT09OBgIArKivl5eW4t7iQj5Bvb2/My8va2donJiapqqo0MzNcWlufnp6IiIh3d3iamZrBwsJHSEgYGRlLSksyMTK+CVnOAAAD/ElEQVR4nO3dW3eiMBSG4WaLKFShtIqKJ3qazv//hQNtdZSTBJLs4Prei7mZ5TJPKyECmXl4QAghhBBCCCFkYS/cA9DdmlbcQ9Dbhsb0yj0IjcVHEkLQgnsc2oonOTAjbrhHoqmEHPET7bbcg9FRQmNxytkl3MNRX3QBFGJO93bWeFyQuI723GNS27EIFGNacw9KYeGhBMx/i0efe2CqcpdeBVAI78A9MkVFXlAJzIkx9+BUlFIdMCPuPriH17+06hA8F1DEPcCePU4bgfl8M+yFuHsTmBHXA55S4+VtYEYchdwD7dq2YY65Ig51Sl057YD5QvyS6E+fa3qzaxm0vlpqN3e1EA/JcTzPqfiDjnyccps2h+C5sZeeXxnWvtIZ8XlKlZfaN4j0dnrpIITxkyQwi6a/Lx6CsN1ZokR8+nn1AISrlmeJEnH5Pd/YL1xJTKIFwfflG+uF+y6f0N+C/Iq45UK/xUq0KUotF/qzfsCM+G610D1f9O1BnNXOU/zC7a4/MDsYa/+GXVh/QUZR3MJ3musFcgtLV7XvTOiP9ANZhbHsd4mhCbdUfVX7boQf2ucYZqEpIJtwbeIQ5BT2XGpbL+y/1LZc6Fbe+7wj4cvByFmCT9h0a/AuhPvOF2QGIjR3luARhgbPEixCt8NV7UEJY8NzjHHhS2BoJcoljEwttbmEC9NniVNzQ3dIj1xAIQITD1CHJpfapUj/5zT+5AQaICZCxVXtXsSJ1kdTIo9nEr3MO2h8Rrz7vU+VOaSL6L/yHoL/0/SMeGjkom+7KNUAdM1+nb8RTZU/7RcquPepMmenmJj84fgu0ZSzVEpMmZbaTQUqp1SZxwzNFXjKNmvKPWZorrmiZ8RdW4FC0WbN07ZIO1OwWTOx7CxRrPdmzcTKOeaynps1I+uB/TZrlrdF2ln3hbhFS+3Gum7WrN4WaWedNmvWbYu0M5LfrBl5dp8liklv1jR977N/kps1m7dF2pnMZs3b2yLtrPVCPJ5RIVtP+/PiQBftvhV/7KNCEzuJ889VYaBpx0VqaKlQ3c02F0KmIIQQQv4ghBBC/iCEEEL+IIQQQv4ghBBC/iCEEEL+IIQQQv4ghBBC/iCEEEL+IIQQQv4g1C4Mik8O1tdtZxy3kL4iP2zXe7edR8xCen5s/w5hp3/thlfoSb77ssMHlVdIko/Orzr8ElmF47nkFo94Kf9TZBUGTxJHYZ4/k/+YQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQqhLGP8lTzKayQq/pN/DU/f/yoabqWyjhaxQ/j2yN1ElRAghhBBCCCGEkP39AxqZk1/A7hcIAAAAAElFTkSuQmCC" alt="">Trang chủ</a></div>
 				<div class="contact">
 					<form action="" method="POST">
 						<h3>ĐĂNG NHẬP</h3>
-						<input type="text" name="taikhoan" placeholder="USERNAME">
-						<input type="password" name="password" placeholder="PASSWORD">
+            <div class="formi">
+						<input type="text" name="taikhoan" placeholder="Username">
+						<input type="password" name="password" placeholder="Password">
+            </div>
 						<button class="submit" name="dangnhap">ĐĂNG NHẬP</button>
 					</form>
 				</div>
-			</div>
-			<div class="right">
-				<div class="right-text">
-					<h2>Đồng hồ LUXURY</h2>
-					<h5>ĐẲNG CẤP 5 SAO</h5>
-				</div>
-				<div class="right-inductor"><img src="https://lh3.googleusercontent.com/fife/ABSRlIoGiXn2r0SBm7bjFHea6iCUOyY0N2SrvhNUT-orJfyGNRSMO2vfqar3R-xs5Z4xbeqYwrEMq2FXKGXm-l_H6QAlwCBk9uceKBfG-FjacfftM0WM_aoUC_oxRSXXYspQE3tCMHGvMBlb2K1NAdU6qWv3VAQAPdCo8VwTgdnyWv08CmeZ8hX_6Ty8FzetXYKnfXb0CTEFQOVF4p3R58LksVUd73FU6564OsrJt918LPEwqIPAPQ4dMgiH73sgLXnDndUDCdLSDHMSirr4uUaqbiWQq-X1SNdkh-3jzjhW4keeNt1TgQHSrzW3maYO3ryueQzYoMEhts8MP8HH5gs2NkCar9cr_guunglU7Zqaede4cLFhsCZWBLVHY4cKHgk8SzfH_0Rn3St2AQen9MaiT38L5QXsaq6zFMuGiT8M2Md50eS0JdRTdlWLJApbgAUqI3zltUXce-MaCrDtp_UiI6x3IR4fEZiCo0XDyoAesFjXZg9cIuSsLTiKkSAGzzledJU3crgSHjAIycQN2PH2_dBIa3ibAJLphqq6zLh0qiQn_dHh83ru2y7MgxRU85ithgjdIk3PgplREbW9_PLv5j9juYc1WXFNW9ML80UlTaC9D2rP3i80zESJJY56faKsA5GVCIFiUtc3EewSM_C0bkJSMiobIWiXFz7pMcadgZlweUdjBcjvaepHBe8wou0ZtDM9TKom0hs_nx_AKy0dnXGNWI1qftTjAg=w1920-h979-ft" alt=""></div>
 			</div>
 		</div>
 	</section>
