@@ -28,7 +28,6 @@
             session_start();
             include("admincp/config/connect.php");
             include("pages/menu.php");
-            include("pages/Banner.php");
             include("pages/header.php");
             include("pages/main.php"); 
             include("pages/show_product.php");
