@@ -64,7 +64,6 @@
 <script>
 	const ctx = document.getElementById('myChart');
 if (ctx) {
-    console.log("Dashboard page");
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
